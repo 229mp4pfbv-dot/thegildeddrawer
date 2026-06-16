@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>The Gilded Drawer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-
 body {
     margin: 0;
     padding: 0;
     text-align: center;
     color: #111;
     font-family: "Bodoni Moda", serif;
-
     background:
-        linear-gradient(
-            rgba(255,255,255,.96),
-            rgba(255,255,255,.96)
-        ),
+        linear-gradient(rgba(255,255,255,.96), rgba(255,255,255,.96)),
         url("Inside store.jpg");
-
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -41,27 +32,32 @@ body {
     width: 360px;
     max-width: 80%;
     display: block;
-    margin: 10px auto 0 auto;
+    margin: 10px auto 0;
 }
 
-nav {
+nav,
+.footer-nav {
     display: flex;
     justify-content: center;
     gap: 14px;
     flex-wrap: wrap;
-    margin: 8px 0 18px 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: #111;
-    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    font-size: 12px;
 }
 
-nav a:hover {
-    opacity: .7;
+nav {
+    margin: 8px 0 18px;
+}
+
+.footer-nav {
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+nav span,
+.footer-nav span {
+    color: #111;
 }
 
 .hero {
@@ -94,33 +90,24 @@ nav a:hover {
     font-size: 18px;
 }
 
-.bottom-nav {
-    margin-top: 35px;
+.footer {
+    font-size: 14px;
+    line-height: 1.8;
     margin-bottom: 60px;
 }
 
-.bottom-nav a {
-    text-decoration: none;
-    color: #111;
-    font-size: 13px;
-    letter-spacing: 1px;
-}
-
-.bottom-nav span {
-    margin: 0 8px;
+.footer p {
+    margin-bottom: 25px;
 }
 
 @media (max-width: 768px) {
-
     .logo {
         width: 240px;
     }
 
-    nav {
+    nav,
+    .footer-nav {
         gap: 10px;
-    }
-
-    nav a {
         font-size: 11px;
     }
 
@@ -140,31 +127,28 @@ nav a:hover {
         font-size: 15px;
     }
 
+    .footer {
+        font-size: 13px;
+    }
 }
-
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
-<img src="gilded_drawer_logo_transparent.png"
-     alt="The Gilded Drawer"
-     class="logo">
+<img src="gilded_drawer_logo_transparent.png" alt="The Gilded Drawer" class="logo">
 
 <nav>
-    <a href="maison.html">Maison</a>
-    <a href="collections.html">Collections</a>
-    <a href="investors.html">Investors</a>
-    <a href="careers.html">Careers</a>
-    <a href="contact.html">Contact</a>
+    <span>Maison</span>
+    <span>Collections</span>
+    <span>Investors</span>
+    <span>Careers</span>
+    <span>Contact</span>
 </nav>
 
-<img src="FrontPageBH.PNG"
-     alt="The Gilded Drawer Beverly Hills"
-     class="hero">
+<img src="FrontPageBH.PNG" alt="The Gilded Drawer Beverly Hills" class="hero">
 
 <div class="tagline">
     Where Luxury is Baseline.
@@ -182,22 +166,32 @@ nav a:hover {
     info@thegildeddrawer.com
 </div>
 
-<div class="bottom-nav">
+<div class="footer-nav">
+    <span>Maison</span>
+    <span>Collections</span>
+    <span>Investors</span>
+    <span>Careers</span>
+    <span>Contact</span>
+</div>
 
-    <a href="investors.html">Investor Relations</a>
+<div class="footer">
+    <p>
+        Investor Relations<br>
+        investors@thegildeddrawer.com
+    </p>
 
-    <span>|</span>
+    <p>
+        Career Inquiries<br>
+        JoeC@thegildeddrawer.com
+    </p>
 
-    <a href="careers.html">Careers</a>
-
-    <span>|</span>
-
-    <a href="contact.html">Contact</a>
-
+    <p>
+        General Inquiries<br>
+        info@thegildeddrawer.com
+    </p>
 </div>
 
 </div>
 
 </body>
-
 </html>
