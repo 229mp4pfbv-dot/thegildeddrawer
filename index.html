@@ -1,24 +1,40 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Gilded Drawer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-
 body {
     margin: 0;
-    padding: 0;
-    background: #ffffff;
+    background: #fff;
+    color: #111;
     text-align: center;
-    color: #222;
+    font-family: "Bodoni Moda", Georgia, serif;
 }
 
 .logo {
-    width: 420px;
+    width: 340px;
     max-width: 75%;
     display: block;
-    margin: 20px auto 0 auto;
+    margin: 18px auto 6px;
+}
+
+nav {
+    padding: 14px 10px 18px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: #111;
+    text-decoration: none;
+    margin: 0 14px;
 }
 
 .hero {
@@ -28,94 +44,115 @@ body {
     margin: 0 auto;
 }
 
-.content {
-    padding: 40px 20px 80px;
-    font-family: "Cormorant Garamond", Georgia, serif;
+.section {
+    padding: 70px 24px;
+    max-width: 900px;
+    margin: auto;
 }
 
-.tagline {
-    font-size: 52px;
+h1 {
+    font-size: 44px;
     font-weight: 500;
-    color: #b8953f;
     margin-bottom: 20px;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.6;
+    margin: 12px 0;
+}
+
+.small {
+    font-size: 18px;
     letter-spacing: 1px;
 }
 
-.location {
-    font-size: 34px;
-    margin-bottom: 12px;
-}
-
-.launching {
-    font-size: 32px;
-    color: #b8953f;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
-}
-
-.email {
-    font-size: 26px;
+.divider {
+    width: 60px;
+    height: 1px;
+    background: #111;
+    margin: 35px auto;
 }
 
 @media (max-width: 768px) {
-
     .logo {
-        width: 220px;
-        margin-top: 10px;
+        width: 230px;
+        margin-bottom: 4px;
     }
 
-    .tagline {
-        font-size: 34px;
+    nav a {
+        display: inline-block;
+        margin: 7px 9px;
+        font-size: 12px;
     }
 
-    .location {
-        font-size: 24px;
+    h1 {
+        font-size: 32px;
     }
 
-    .launching {
-        font-size: 22px;
-    }
-
-    .email {
+    p {
         font-size: 18px;
     }
-
-    .content {
-        padding-top: 25px;
-    }
 }
-
 </style>
-
 </head>
 
 <body>
 
-<img src="gilded_drawer_logo_transparent.png" class="logo">
+<img src="gilded_drawer_logo_transparent.png" class="logo" alt="The Gilded Drawer">
 
-<img src="FrontPageBH.PNG" class="hero">
+<nav>
+    <a href="#maison">Maison</a>
+    <a href="#collections">Collections</a>
+    <a href="#partners">Partners</a>
+    <a href="#journal">Journal</a>
+    <a href="#investors">Investors</a>
+    <a href="#careers">Careers</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-<div class="content">
+<img src="FrontPageBH.PNG" class="hero" alt="The Gilded Drawer Beverly Hills">
 
-    <div class="tagline">
-        An Intimate World of Luxury.
-    </div>
+<section class="section" id="maison">
+    <h1>Maison</h1>
+    <p>The Gilded Drawer is a luxury retail concept curating exceptional intimate apparel, sleepwear, and elevated client experiences.</p>
+    <div class="divider"></div>
+    <p class="small">Los Angeles, California</p>
+    <p class="small">Launching Soon</p>
+</section>
 
-    <div class="location">
-        Los Angeles, California
-    </div>
+<section class="section" id="collections">
+    <h1>Collections</h1>
+    <p>A curated destination for the world's finest intimate luxury maisons.</p>
+    <p class="small">Online boutique launching soon.</p>
+</section>
 
-    <div class="launching">
-        Launching Soon
-    </div>
+<section class="section" id="partners">
+    <h1>Partners</h1>
+    <p>Designed for maison partnerships, strategic collaborations, and elevated retail presentation.</p>
+</section>
 
-    <div class="email">
-        info@thegildeddrawer.com
-    </div>
+<section class="section" id="journal">
+    <h1>Journal</h1>
+    <p>Editorial perspectives on luxury retail, intimate apparel, craftsmanship, and client experience.</p>
+</section>
 
-</div>
+<section class="section" id="investors">
+    <h1>Investors</h1>
+    <p>The Gilded Drawer is developing a next-generation luxury retail concept focused on curated intimate apparel and elevated client experience.</p>
+    <p class="small">Investor inquiries: info@thegildeddrawer.com</p>
+</section>
+
+<section class="section" id="careers">
+    <h1>Careers</h1>
+    <p>The Gilded Drawer is interested in connecting with exceptional talent.</p>
+    <p class="small">For inquiries contact JoeC@thegildeddrawer.com</p>
+</section>
+
+<section class="section" id="contact">
+    <h1>Contact</h1>
+    <p class="small">General inquiries: info@thegildeddrawer.com</p>
+</section>
 
 </body>
-
 </html>
