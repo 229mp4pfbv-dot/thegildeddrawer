@@ -1,197 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Gilded Drawer</title>
+  <title>The Gilded Drawer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #fff;
+      color: #1f1f1f;
+      text-align: center;
+      letter-spacing: 0.04em;
+    }
 
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: #111;
-    font-family: "Bodoni Moda", serif;
-    background:
-        linear-gradient(rgba(255,255,255,.96), rgba(255,255,255,.96)),
-        url("Inside store.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
+    .page {
+      min-height: 100vh;
+      padding: 70px 22px 40px;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
+        url("background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
 
-.container {
-    max-width: 1400px;
-    margin: auto;
-    padding: 20px;
-}
-
-.logo {
-    width: 360px;
-    max-width: 80%;
-    display: block;
-    margin: 10px auto 0;
-}
-
-nav,
-.footer-nav {
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    flex-wrap: wrap;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-size: 12px;
-}
-
-nav {
-    margin: 8px 0 18px;
-}
-
-.footer-nav {
-    margin-top: 45px;
-    margin-bottom: 30px;
-}
-
-nav span,
-.footer-nav span {
-    color: #111;
-}
-
-.hero {
-    width: 100%;
-    max-width: 1100px;
-    display: block;
-    margin: 0 auto;
-}
-
-.tagline {
-    margin-top: 35px;
-    font-size: 42px;
-    line-height: 1.25;
-}
-
-.location {
-    margin-top: 10px;
-    font-size: 24px;
-}
-
-.comingsoon {
-    margin-top: 10px;
-    font-size: 18px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-.email {
-    margin-top: 18px;
-    font-size: 18px;
-}
-
-.footer {
-    font-size: 14px;
-    line-height: 1.8;
-    margin-bottom: 60px;
-}
-
-.footer p {
-    margin-bottom: 25px;
-}
-
-@media (max-width: 768px) {
     .logo {
-        width: 240px;
+      width: 220px;
+      max-width: 70%;
+      margin: 0 auto 38px;
+      display: block;
     }
 
-    nav,
-    .footer-nav {
-        gap: 10px;
-        font-size: 11px;
+    nav {
+      margin: 18px auto 34px;
+      max-width: 720px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 14px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
     }
 
-    .tagline {
-        font-size: 30px;
+    nav a {
+      color: #1f1f1f;
+      text-decoration: none;
     }
 
-    .location {
+    nav a:hover {
+      opacity: 0.55;
+    }
+
+    .hero {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .hero img {
+      width: 100%;
+      display: block;
+      margin: 0 auto 34px;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: normal;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin: 34px 0 14px;
+    }
+
+    p {
+      max-width: 650px;
+      margin: 0 auto 16px;
+      font-size: 16px;
+      line-height: 1.7;
+      letter-spacing: 0.04em;
+    }
+
+    .section {
+      margin: 58px auto;
+      max-width: 680px;
+    }
+
+    .contact {
+      margin-top: 60px;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .contact a {
+      color: #1f1f1f;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.65;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding-top: 54px;
+      }
+
+      .logo {
+        width: 190px;
+        margin-bottom: 30px;
+      }
+
+      nav {
+        gap: 12px;
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        line-height: 2;
+      }
+
+      h1 {
         font-size: 18px;
-    }
+      }
 
-    .comingsoon {
+      p {
         font-size: 15px;
+      }
     }
-
-    .email {
-        font-size: 15px;
-    }
-
-    .footer {
-        font-size: 13px;
-    }
-}
-</style>
+  </style>
 </head>
 
 <body>
+  <div class="page">
 
-<div class="container">
+    <img src="logo.png" alt="The Gilded Drawer" class="logo">
 
-<img src="gilded_drawer_logo_transparent.png" alt="The Gilded Drawer" class="logo">
+    <nav>
+      <a href="#maison">Maison</a>
+      <a href="#collections">Collections</a>
+      <a href="mailto:investors@thegildeddrawer.com">Investors</a>
+      <a href="mailto:careers@thegildeddrawer.com">Careers</a>
+      <a href="mailto:info@thegildeddrawer.com">Contact</a>
+    </nav>
 
-<nav>
-    <span>Maison</span>
-    <span>Collections</span>
-    <span>Investors</span>
-    <span>Careers</span>
-    <span>Contact</span>
-</nav>
+    <div class="hero">
+      <img src="hero.jpg" alt="The Gilded Drawer luxury retail concept">
+    </div>
 
-<img src="FrontPageBH.PNG" alt="The Gilded Drawer Beverly Hills" class="hero">
+    <section id="maison" class="section">
+      <h1>Maison</h1>
+      <p>
+        The Gilded Drawer is a Los Angeles luxury retail concept devoted to curated discovery,
+        refined presentation, and elevated client experience.
+      </p>
+    </section>
 
-<div class="tagline">
-    Where Luxury is Baseline.
-</div>
+    <section id="collections" class="section">
+      <h1>Collections</h1>
+      <p>
+        A considered destination for luxury, intimacy, craftsmanship, and timeless design.
+      </p>
+    </section>
 
-<div class="location">
-    Los Angeles, California
-</div>
+    <section class="contact">
+      <p><a href="mailto:info@thegildeddrawer.com">info@thegildeddrawer.com</a></p>
+    </section>
 
-<div class="comingsoon">
-    Coming Soon
-</div>
+    <footer>
+      © 2026 The Gilded Drawer
+    </footer>
 
-<div class="email">
-    info@thegildeddrawer.com
-</div>
-
-<div class="footer-nav">
-    <span>Maison</span>
-    <span>Collections</span>
-    <span>Investors</span>
-    <span>Careers</span>
-    <span>Contact</span>
-</div>
-
-<div class="footer">
-    <p>
-        Investor Relations<br>
-        investors@thegildeddrawer.com
-    </p>
-
-    <p>
-        Career Inquiries<br>
-        JoeC@thegildeddrawer.com
-    </p>
-
-    <p>
-        General Inquiries<br>
-        info@thegildeddrawer.com
-    </p>
-</div>
-
-</div>
-
+  </div>
 </body>
 </html>
